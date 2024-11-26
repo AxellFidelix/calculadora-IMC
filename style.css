@@ -1,0 +1,99 @@
+/* Estilo Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #20a9f2, #66a6ff);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Card principal */
+.card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os elementos */
+    align-items: center; /* Centraliza os itens no card */
+    animation: fadeIn 0.5s ease;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+    width: 100%; /* Alinha os labels à largura do card */
+    text-align: left; /* Textos alinhados à esquerda */
+}
+
+input {
+    padding: 10px;
+    width: 100%; /* Garante que o input ocupe a largura do card */
+    font-size: 1rem;
+    border: 2px solid #66a6ff;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+    border-color: #ff9a9e;
+    box-shadow: 0px 6px 12px rgba(255, 154, 158, 0.3);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#resultado {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Alinha o resultado à largura do card */
+}
+
+/* Animação de aparição */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
